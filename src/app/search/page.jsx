@@ -17,7 +17,7 @@ export default function page() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h2 className="text-3xl sm:text-4xl text-darkBlue-pastel font-semibold mb-4">
+            <h2 className="text-3xl sm:text-4xl text-darkBlue-pastel font-semibold mb-4 text-center">
               Start Browsing
             </h2>
             <Image src={SearchImage} alt="" className="w-80 sm:w-120" />

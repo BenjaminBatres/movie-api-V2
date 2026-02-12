@@ -5,7 +5,7 @@ export default function SearchInput({color, bgColor, shadow}) {
     const router = useRouter()
     const [search, setSearch] = useState("")
   return (
-    <div className="w-70 sm:w-120 relative mb-5 input-container">
+    <div className=" sm:w-120 relative mb-5 input-container">
       <input
         type="text"
         placeholder="Search..."
