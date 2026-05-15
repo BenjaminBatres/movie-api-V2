@@ -40,6 +40,11 @@ export default function page() {
     }
     fetchMovie();
   }, [select]);
+
+  function decodeSpaces(str) {
+  // The 'g' flag ensures it replaces every instance, not just the first one
+  return str.replace(/%20/g, ' ');
+}
   return (
     <>
       <Navbar />
@@ -51,7 +56,7 @@ export default function page() {
           {movies !== undefined ? (
             <>
               <div className="text-xl sm:text-2xl md:text-3xl font-extralight text-darkBlue-pastel">
-                Search results for: "{id}"
+                Search results for: "{decodeSpaces(id)}"
               </div>
 
               <CustomSelect
@@ -62,7 +67,7 @@ export default function page() {
             </>
           ) : (
             <div className="text-xl sm:text-2xl md:text-3xl font-extralight text-darkBlue-pastel">
-              No search results for: "{id}"
+              No search results for: "{decodeSpaces(id)}"
             </div>
           )}
         </div>
