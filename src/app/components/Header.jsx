@@ -1,13 +1,18 @@
+'use client'
 import React from "react";
 import SearchInput from "./ui/SearchInput";
-import * as motion from "motion/react-client";
+import { motion } from "motion/react";
+import { usePathname } from "next/navigation";
 
 export default function Header() {
-  return (
+  const pathName = usePathname()
+  const moviePathname = pathName.slice(0,6)
+  if (pathName !== '/' ) return (
     <header
       className="h-100 bg-cover bg-center border-y-5 border-darkBlue-pastel flex flex-col justify-center items-center"
       style={{
         backgroundImage: `url(https://images.pexels.com/photos/7081182/pexels-photo-7081182.jpeg)`,
+        display: moviePathname === '/movie' && 'none' 
       }}
     >
       <motion.div

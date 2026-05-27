@@ -47,8 +47,6 @@ export default function page() {
 }
   return (
     <>
-      <Navbar />
-      <Header />
       <div className="py-10 px-2">
         <div
           className={`max-w-7xl mx-auto flex ${movies === undefined ? "justify-center" : "justify-between"}`}

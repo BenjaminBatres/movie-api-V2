@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useParams } from "next/navigation";
 import React, { useEffect, useState } from "react";
 import { IoChevronBack } from "react-icons/io5";
-import { LuImageOff } from "react-icons/lu";
 import { FaCaretRight } from "react-icons/fa";
 
 export default function page() {
@@ -36,7 +35,6 @@ export default function page() {
 
   return (
     <>
-      <Navbar />
       <div className="bg-[#97cde7]/70 pb-4 md:pb-0">
         <div className="py-6 px-4">
           <div className="max-w-7xl mx-auto">

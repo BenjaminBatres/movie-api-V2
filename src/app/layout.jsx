@@ -1,7 +1,6 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
 export const metadata = {
   title: "Movie API",
@@ -12,8 +11,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={` antialiased`}
+        className={`antialiased`}
       >
+        <Navbar />
+        <Header />
         {children}
       </body>
     </html>

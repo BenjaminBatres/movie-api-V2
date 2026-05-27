@@ -1,15 +1,12 @@
 "use client";
-import Navbar from "../components/Navbar";
 import SearchImage from "../assets/undraw_search-engines_k649.svg";
 import Image from "next/image";
-import Header from "../components/Header";
 import * as motion from "motion/react-client";
 
 export default function page() {
+  
   return (
     <>
-      <Navbar />
-      <Header />
       <div className="py-10 px-4">
         <div className="max-w-7xl mx-auto flex flex-col items-center justify-center">
           <motion.div
